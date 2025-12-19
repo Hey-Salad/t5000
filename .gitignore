@@ -18,6 +18,7 @@ config/heysalad_config.local.h
 
 # OS files
 .DS_Store
+**/.DS_Store
 Thumbs.db
 
 # Logs

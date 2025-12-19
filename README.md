@@ -176,6 +176,48 @@ The HeySalad T5 Voice Terminal is a low-cost ($30), voice-first payment device t
 | Power | 5V via USB-C |
 | Dimensions | 50mm x 30mm |
 
+## Enclosure Design
+
+The terminal includes a custom 3D-printable enclosure designed for durability and ease of use in market environments.
+
+### Design Mockups
+
+Concept renders of the HeySalad T5 Voice Terminal:
+
+| Front View | Perspective View |
+|------------|------------------|
+| ![Mockup 1](Image%20Mock%20Ups/Gemini_Generated_Image_8vikbm8vikbm8vik.png) | ![Mockup 2](Image%20Mock%20Ups/Gemini_Generated_Image_l5bdfxl5bdfxl5bd.png) |
+
+### 3D Printing Files
+
+Ready-to-print STL files for the enclosure:
+
+| File | Description |
+|------|-------------|
+| [`heysalad_terminal_top.stl`](STL%20Files/heysalad_terminal_top.stl) | Top cover with speaker grille and LED window |
+| [`heysalad_terminal_bottom.stl`](STL%20Files/heysalad_terminal_bottom.stl) | Base with T5AI-Core mounting points |
+| [`heysalad_buttons.stl`](STL%20Files/heysalad_buttons.stl) | Push-to-talk button cap |
+
+### OpenSCAD Source Files
+
+Parametric design files for customization:
+
+| File | Description |
+|------|-------------|
+| [`heysalad_terminal_top.scad`](OpenSCAD/heysalad_terminal_top.scad) | Top cover design |
+| [`heysalad_terminal_bottom.scad`](OpenSCAD/heysalad_terminal_bottom.scad) | Base design |
+| [`heysalad_buttons.scad`](OpenSCAD/heysalad_buttons.scad) | Button design |
+
+### Print Settings
+
+| Parameter | Recommended Value |
+|-----------|-------------------|
+| Material | PLA or PETG |
+| Layer Height | 0.2mm |
+| Infill | 20% |
+| Supports | Yes (for top cover) |
+| Print Time | ~3 hours total |
+
 ## Project Structure
 
 ```
@@ -187,6 +229,17 @@ heysalad-t5-terminal/
 ├── src/
 │   ├── main.c                 # Application entry point
 │   └── tuya_main.c            # Tuya SDK integration
+├── Image Mock Ups/            # Concept renders
+│   ├── Gemini_Generated_Image_8vikbm8vikbm8vik.png
+│   └── Gemini_Generated_Image_l5bdfxl5bdfxl5bd.png
+├── OpenSCAD/                  # Parametric CAD source files
+│   ├── heysalad_terminal_top.scad
+│   ├── heysalad_terminal_bottom.scad
+│   └── heysalad_buttons.scad
+├── STL Files/                 # Ready-to-print 3D models
+│   ├── heysalad_terminal_top.stl
+│   ├── heysalad_terminal_bottom.stl
+│   └── heysalad_buttons.stl
 ├── CMakeLists.txt             # Build configuration
 ├── Kconfig                    # Menuconfig options
 ├── app_default.config         # Default build settings

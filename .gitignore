@@ -1,0 +1,24 @@
+# Build outputs
+build/
+output/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local configuration with credentials
+config/heysalad_config.local.h
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

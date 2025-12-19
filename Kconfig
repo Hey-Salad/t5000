@@ -1,0 +1,27 @@
+menu "HeySalad Terminal Configuration"
+
+config PROJECT_VERSION
+    string "Project Version"
+    default "1.0.0"
+
+config HEYSALAD_WIFI_SSID
+    string "WiFi SSID"
+    default "HeySalad_02"
+
+config HEYSALAD_WIFI_PASS
+    string "WiFi Password"
+    default "GutenTag%800"
+
+config HEYSALAD_DEVICE_ID
+    string "Tuya Device ID"
+    default "uuid77f15ace31105442"
+
+config HEYSALAD_DEVICE_KEY
+    string "Tuya Device Key"
+    default "v7oqpoZ5nREXsudKP1s8hKIGkj6fxiOA"
+
+config HEYSALAD_BRIDGE_URL
+    string "HeySalad Bridge URL"
+    default "https://tuya-bridge.heysalad-o.workers.dev"
+
+endmenu
